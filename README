@@ -1,0 +1,26 @@
+Information
+---------------------------------------------------------------------------------
+Opened the input files and readed the number of players, numbers of race and, 
+numbers of prints(a print means that i have to show the scoreboard).
+Got every time for every player and made the points.
+---------------------------------------------------------------------------------
+Game's logic
+---------------------------------------------------------------------------------
+Defined a class Player which contains points and id for every player.
+Defined a struct Node and a class Skiplist which will make the data structure :
+skiplist.
+Everytime I decide the points for a race, I delete the nodes from 
+skiplist which contains the data from last race. After that, I add
+the new node which will represent my new player with new data.
+At a "print", I'll show the scoreboard which will contain:id, points,
+and the last position from the last "print".For doing this, I'll take
+the last position from the last scoreboard, by moving in it.
+---------------------------------------------------------------------------------
+Problems
+---------------------------------------------------------------------------------
+Skiplist doesn't add the same data.So, when I add a node with same data
+like another one, I go on that nodeand I add after it.
+When the points for 2 nodes are equal, I add by the id.
+When 2 or more players have the same time, the pointsare added in order 
+from their last position in the last scoreboard.
+----------------------------------------------------------------------------------
